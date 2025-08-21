@@ -1257,6 +1257,11 @@ body {
         display: none !important;
     }
 
+    /* 10 блок */ 
+    .service-section {margin:0;
+    padding:0;
+padding-top:20px;
+width:90%;}
     .faq-section__flex {
         flex-direction: column !important;
         padding-left: 20px !important;
@@ -1453,15 +1458,15 @@ width: 90%;}
         font-weight: 400;
         padding-top: 20px;
         /* padding-left: 100px; */
-        margin:0;
+        margin:0;}
 
 /* 8 блок */
-    .steps-row {
-        flex-wrap: wrap;
+    
+    .step-description {
+        font-size:12px;
     }
-
     .step-col {
-        width: 100% !important;
+        width: 30% !important;
         margin-bottom: 30px;
     }
 
@@ -1472,6 +1477,8 @@ width: 90%;}
     .service-title {
         font-size: 24px !important;
     }
+    /* 10 блок */ 
+
 
     .faq-section {
         height: auto !important;
@@ -1610,11 +1617,16 @@ width: 90%;}
         width: 100%;
         padding: 0 50px;
     }
-
+/* 8 блок */
+.step-description {
+    font-size:12px;
+}
     .steps-row {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        padding-bottom: 0px;
+  
     }
-
+.steps-title {padding-top:20px;}
     .step-col {
         width: 45% !important;
         margin-bottom: 40px;
@@ -1623,6 +1635,8 @@ width: 90%;}
     .step-arrow {
         display: none !important;
     }
+    /* 10 блок */ 
+
 
     .faq-section__flex {
         justify-content: space-between !important;
