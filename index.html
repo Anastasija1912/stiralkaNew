@@ -108,19 +108,13 @@
                     <p class="working-hours__text">Пн-Вс: с 7:00 до 24:00</p>
                 </div>
                 <div class="header__actions">
-                    <a href="#popup:myform" class="btn">ВЫЗВАТЬ МАСТЕРА</a>
+                    <a href="#popup:myform" class="btn">Вызов мастера</a>
                 </div>
                 <div class="header__contacts">
-
                     <a href="tel:+79776269260" class="phone-link">+7 (977) 626-92-60</a>
-
                 </div>
                 <div class="social-links">
-
-
-
                 </div>
-
             </div>
         </div>
     </header>
@@ -129,11 +123,18 @@
     <section class="menu">
         <div class="container">
             <ul class="menu__list">
-                <li><img src="icon_washing_machine.png">Ремонт стиральных машин</li>
-                <li><img src="icon_icrackers.png">Ремонт посудомоечных машин</li>
-                <li><img src="icon_drying_machine.png">Ремонт сушильных машин</li>
-                <li><img src="icon-connection.png">Подключение бытовой техники</li>
-
+                <li class="menu__list__button">
+                    <img src="icon_washing_machine.png">Ремонт стиральных машин
+                </li>
+                <li lass="menu__list__button">
+                    <img src="icon_icrackers.png">Ремонт посудомоечных машин
+                </li>
+                <li lass="menu__list__button">
+                    <img src="icon_drying_machine.png">Ремонт сушильных машин
+                </li>
+                <li lass="menu__list__button">
+                    <img src="icon-connection.png">Подключение бытовой техники
+                </li>
             </ul>
         </div>
     </section>
@@ -165,12 +166,17 @@
             </div>
 
             <div class="hero__img ">
-                <div class="stiralka">
-                    <img src="i-no-bg-preview_carv.png" alt="стиральная машинка">
-                    <img src="i_4-no-bg-preview_ca.png" alt="стиральная машинка">
-                </div>
-                <img src="list.png" class="list" alt="листики">
+                <div class="stiralka" style="display: flex;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+                flex-wrap: nowrap;
+                flex-direction: row;"></div>
+                <img src="i-no-bg-preview_carv.png" alt="стиральная машинка">
+                <img src="i_4-no-bg-preview_ca.png" alt="стиральная машинка">
             </div>
+            <img src="list.png" class="list" alt="листики">
+        </div>
 
         </div>
     </section>
@@ -204,26 +210,26 @@
     <!--5 work -->
     <section class="work-section">
         <div class="container">
-            <h3 class="feature-title">Ремонтируем бытовую технику</h3>
+            <h3 class="work-title">Ремонтируем бытовую технику</h3>
             <div class="works">
                 <div class="work-item work-item__1">
-                    <p>Стиральная машина</p>
-                    <p>от 500р</p>
+                    <p class="work-item__text">Стиральная машина</p>
+                    <p class="work-item__many">от 500р</p>
                     <img src="drying.png" alt="Стиральная машина">
                 </div>
                 <div class="work-item work-item__2">
-                    <p>Посудомоечная машина</p>
-                    <p>от 500р</p>
+                    <p class="work-item__text">Посудомоечная машина</p>
+                    <p class="work-item__many">от 500р</p>
                     <img src="icrackers.png" alt="Посудомоечная машина">
                 </div>
                 <div class="work-item work-item__3">
-                    <p>Сушильная машина</p>
-                    <p>от 500р</p>
+                    <p class="work-item__text">Сушильная машина</p>
+                    <p class="work-item__many">от 500р</p>
                     <img src="drying.png" alt="Сушильная машина">
                 </div>
                 <div class="work-item work-item__4 ">
-                    <p>Установка бытовой техники</p>
-                    <p>от 1000р</p>
+                    <p class="work-item__text">Установка бытовой техники</p>
+                    <p class="work-item__many work-item__many2">от 1000р</p>
                     <img src="installation.png" alt="Установка бытовой техники">
                 </div>
 
@@ -235,20 +241,20 @@
 
     <section class="work-section">
         <div class="container">
-            <h3 class="feature-title">Подключаем бытовую технику</h3>
+            <h3 class="work-title">Подключаем бытовую технику</h3>
             <div class="works_block">
                 <div class="work-item_block  work-item__5">
-                    <p class="work-item_block__text">Подключение стиральной машины</p>
+                    <p class="work-item_block__text">Подключение<br>стиральной машины</p>
 
                     <img src="connection_washing.png" alt="Подключение стиральной машины">
                 </div>
                 <div class="work-item_block  work-item__6">
-                    <p class="work-item_block__text">Подключение посудомоечной машины</p>
+                    <p class="work-item_block__text">Подключение<br>посудомоечной машины</p>
 
                     <img src="connection_icrackers.png" alt="Подключение посудомоечной машины">
                 </div>
                 <div class="work-item_block work-item__6">
-                    <p class="work-item_block__text">Подключение сушильной машины</p>
+                    <p class="work-item_block__text">Подключение<br>сушильной машины</p>
 
                     <img src="connection_drying.png" alt="Подключение сушильной машины">
                 </div>
@@ -260,7 +266,7 @@
     <!-- 7 about -->
 
     <section class="about-section">
-        <div class="container">
+        <div class="container about-section__container ">
             <h3 class="about-title">О нашей компании</h3>
 
             <div class="about-content">
@@ -286,7 +292,7 @@
                     </p>
                 </div>
 
-                <div class="features-grid">
+                <div class="features-flex">
                     <div class="feature-card">
                         <img src="review.png" alt="Опыт работы" class="feature-icon">
                         <div class="feature-content">
@@ -334,10 +340,9 @@
 
     <!--9 блок -->
     <section class="repair-section">
-        <div class="container">
+        <div class="container repair-section__container">
             <p class="repair-section__title">Закажите ремонт c сайта, получите <br>
                 скидку 7%</p>
-
             <form class="callback-form">
                 <div class="form-group">
                     <div class="phone-input">
@@ -352,8 +357,8 @@
 
     <!--10 блок -->
     <section class="steps-process-section">
-        <div class="container">
-            <h2 class="section-title">Как производятся работы</h2>
+        <div class="container steps-process-section__container">
+            <h2 class="steps-title">Как производятся работы</h2>
             <div class="steps-container">
                 <div class="steps-row">
                     <!-- Step 1 -->
@@ -421,17 +426,17 @@
                 многих повседневных задач. Многим уже сложно представить, как раньше обходились без таких функциональных
                 приборов.
             </p>
-            <br>
+
             <p class="section-text">
                 Поэтому, когда домашняя техника выходит из строя, часто пользователи теряются и не знают, что делать.
             </p>
-            <br>
+
             <p class="section-text">
                 Сразу возникает несколько проблем, которые надлежит срочно решить: найти ближайший сервисный центр,
                 отвезти технику в сервис, пытаться обходиться без привычных
                 устройств какое-то время.
             </p>
-            <br>
+
             <p class="section-text">
                 Как же сэкономить время и свои нервные клетки в этой ситуации? Мы предлагаем воспользоваться услугами
                 сервисного центра BigWash по ремонту и установке
@@ -440,15 +445,16 @@
                 у клиента, стоимость ремонта начинается от 500 руб. На ремонтные работы бытовых приборов предоставляется
                 гарантия качества до 36 месяцев.
             </p>
-            <br>
+
             <h2 class="service-title">Как выбрать сервисный центр</h2>
             <p class="section-text">
                 Сегодня исправлением поломок бытовой техники занимается большое число компаний. Каждая из организаций
                 предлагает различные услуги и характерные особенности
                 клиентского сервиса. Пользователям сложно сделать выбор того или иного исполнителя.
             </p>
-
-            <ul>
+            <p class="section-text_bold"><b>Мы в свою очередь предлагаем нашим клиентам следующие плюсы при обращении в
+                    нашу компанию:</b></p>
+            <ul class="service__list">
                 <li>Наша техподдержка работает круглосуточно. Вы можете задать вопрос консультанту и оставить заявку на
                     выезд инженера на дом.</li>
                 <li>На ремонт и установку новых комплектующих, предлагается долгосрочная гарантия до 36 месяцев, которой
@@ -475,13 +481,13 @@
 
     <!--12  Секция FAQ -->
     <section class="faq-section">
-        <div class="container">
+        <div class="container faq-section__container">
             <div class="faq-section__flex">
                 <div class="faq-section__text">
-                    <p class="section-title">Звоните <a href="7 (977) 626-92-60">+7 (977) 626-92-60</a></p>
-                    <p class="section-title">и мы ответим на все вопросы</p>
+                    <p class="fax-section-title">Звоните <a href="tel:7 (977) 626-92-60">+7 (977) 626-92-60</a></p>
+                    <p class="fax-section-title">и мы ответим на все вопросы</p>
                     <br>
-                    <p class="section-text">Оставьте заявку и узнайте стоимость вашего ремонта
+                    <p class="fax-section-text">Оставьте заявку и узнайте стоимость вашего ремонта
                     </p>
                 </div>
                 <div class="faq-section__form">
@@ -489,25 +495,21 @@
                     <form class="callback-form">
                         <div class="form-group">
                             <div class="phone-input">
-                                <div class="phone-prefix">
-                                    <span class="flag-icon">🇷🇺</span>
-                                    <span class="code">+7</span>
-                                </div>
-                                <input type="tel" name="phone" placeholder="(999) 999-99-99"
+
+                                <input class="input__phone" type="tel" name="phone" placeholder="+7(999) 999-99-99"
                                     pattern="[\+]\d{1}\s?[\(]\d{3}[\)]\s?\d{3}[\-]\d{2}[\-]\d{2}" required>
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="phone-input">
-                                <button type="submit" class="btn__hero">Получить консультацию</button>
+                                <button type="submit" class="btn__hero btn__hero__faq">Получить консультацию</button>
                             </div>
                         </div>
-                        <div class="footer__bottom">
-                            <p></p>
-                            <p><a href="policy.html">Политика конфиденциальности</a>Я соглашаюсь с условиями обработки
+                        <div class="faq__form">
+
+                            <p>Я соглашаюсь с условиями обработки
                                 персональных данных</p>
-                        </div>
                     </form>
 
                 </div>
@@ -520,7 +522,7 @@
         <div class="container footer__container">
             <div class="footer__column">
                 <div class="footer__logo">
-                    <img src="left_medium.png" alt="Логотип" width="150">
+                    <img class="footer__logo__img" src="left_medium.png" alt="Логотип" width="150">
                 </div>
                 <div class="footer__column tel__form">
                     <p class="tel"><a href="tel:+79776269260">+7 (977) 626-92-60</a></p>
@@ -528,19 +530,19 @@
                 </div>
                 <div class="footer__column tel__coll">
 
-                    <form class="callback-form">
+                    <form class="callback-form__footer">
                         <div class="form-group">
-                            <div class="phone-input">
-                                <button type="submit" class="btn__hero">Заказать ремонт</button>
+                            <div class="phone-input__footer">
+                                <button type="submit" class="btn__hero btn__hero__footer">Заказать ремонт</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="footer__container">
+        <div class="container footer__container">
             <div>
-                <ul>
+                <ul class="footer__list col-1" style="list-style: none;">
                     <li>Ремонт стиральных машин</li>
                     <li>Ремонт посудомоечных машин</li>
                     <li>Ремонт сушильных машин</li>
@@ -550,17 +552,18 @@
                     <li><a href="policy.html">Политика конфиденциальности</a></li>
                 </ul>
             </div>
-            <div class="footer__column">
+            <div class=" col-2">
                 <p>График работы</p>
-                <p>Пн-Пт 7:00 - 24:00</p>
-                <p>Сб-Вс 7:00 - 24:00</p>
+                <br>
+                <p><span>Пн-Пт</span> 7:00 - 24:00</p>
+                <p><span>Сб-Вс</span> 7:00 - 24:00</p>
             </div>
-            <div class="footer__column">
+            <div class="  col-3">
                 <p>ИП Бирюков С.В.</p>
                 <p>ИНН 503500327557</p>
             </div>
-            <div>
-                <ul>
+            <div >
+                <ul class="footer__list col-4" style="list-style: none;">
                     <li>О компании</li>
                     <li>Контакты</li>
                     <li>Вакансии</li>
