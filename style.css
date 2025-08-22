@@ -1034,6 +1034,9 @@ body {
 @media (max-width: 480px) {
     /* Мобильные телефоны */
 
+    .container {
+       
+    }
     /* header */
     .header {
 
@@ -1077,12 +1080,16 @@ body {
     }
 
     /* МЕНЮ */
+    .menu {
+        height:100%;
+    }
     .header__contacts__menu {
         display: block;
         font-size: 26px;
         font-weight: 500;
         z-index: 2;
         padding-top: 10px;
+        padding-bottom: 10px;
         text-align: center;
     }
 
@@ -1090,25 +1097,40 @@ body {
         font-size: 26px;
         font-weight: 500;
         color: #292929;
-
+        text-decoration:none;
     }
 
     .menu__list {
         display: none;
 
     }
-
-
+    .mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f9f9f9;
+        z-index: 1000;
+        padding: 20px;
+        box-sizing: border-box;
+        overflow-y: auto;
+    }
     /* 3 HERO */
     .hero {
         height: auto !important;
-        padding: 20px !important;
+        /* padding: 20px !important; */
     }
-
+.hero__container {
+    width: 90%;
+}
     .hero__img {
         display: none;
     }
-
+.phone-input {
+    justify-content: space-around;
+}
     .hero__title {
         font-size: 20px !important;
         width: 100% !important;
@@ -1126,8 +1148,9 @@ body {
     }
 
     .callback-form {
-        margin: auto;
+         margin: 0; 
         padding: 0;
+        padding-bottom:10px; 
     }
 
     .hero__img {
@@ -1281,7 +1304,7 @@ body {
     }
 
     .callback-form {
-        padding: 10px;
+        /* padding: 10px; */
     }
 
     /* 9 блок */
