@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>NEW MasterGO</title>
+    <title>MasterGO</title>
     <script>document.addEventListener('DOMContentLoaded', function () {
             const burgerMenu = document.querySelector('.burger__menu');
             const mobileMenu = document.getElementById('mobileMenu');
@@ -115,6 +115,30 @@
                 </div>
                 <div class="social-links">
                 </div>
+
+            </div>
+            <div class="header__burger__menu" >
+                <a href="#" class="social-link burger__menu" aria-label="burger__menu">
+                    <img src="burger.png" alt="menu" class="burger-icon">
+                    <img src="close.png" alt="close" class="close-icon" style="display: none;">
+                </a>
+                <div class="mobile-menu" id="mobileMenu">
+                    <ul>
+                        <li class="menu__list__button"><a href="#services" class="menu-link"></a>
+                            <img src="icon_washing_machine.png">Ремонт стиральных машин</a>
+                        </li>
+                        <li lass="menu__list__button"><a href="#steps" class="menu-link"></a>
+                            <img src="icon_icrackers.png">Ремонт посудомоечных машин</a>
+                        </li>
+                        <li lass="menu__list__button"><a href="#faq" class="menu-link"></a>
+                            <img src="icon_drying_machine.png">Ремонт сушильных машин</a>
+                        </li>
+                        <li lass="menu__list__button"><a href="#contacts" class="menu-link"></a>
+                            <img src="icon-connection.png">Подключение бытовой техники</a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -136,6 +160,9 @@
                     <img src="icon-connection.png">Подключение бытовой техники
                 </li>
             </ul>
+            <div class="header__contacts__menu">
+                <a href="tel:+79776269260" class="phone-link-menu">+7 (977) 626-92-60</a>
+            </div>
         </div>
     </section>
 
@@ -167,11 +194,11 @@
 
             <div class="hero__img ">
                 <div class="stiralka" style="display: flex;
-                align-items: center;
-                justify-content: center;
-                align-content: center;
-                flex-wrap: nowrap;
-                flex-direction: row;"></div>
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: nowrap;
+            flex-direction: row;"></div>
                 <img src="i-no-bg-preview_carv.png" alt="стиральная машинка">
                 <img src="i_4-no-bg-preview_ca.png" alt="стиральная машинка">
             </div>
@@ -209,7 +236,7 @@
     </section>
     <!--5 work -->
     <section class="work-section">
-        <div class="container">
+        <div class="container work-section__container">
             <h3 class="work-title">Ремонтируем бытовую технику</h3>
             <div class="works">
                 <div class="work-item work-item__1">
@@ -232,7 +259,6 @@
                     <p class="work-item__many work-item__many2">от 1000р</p>
                     <img src="installation.png" alt="Установка бытовой техники">
                 </div>
-
             </div>
         </div>
     </section>
@@ -258,11 +284,11 @@
 
                     <img src="connection_drying.png" alt="Подключение сушильной машины">
                 </div>
-
-
             </div>
         </div>
     </section>
+
+
     <!-- 7 about -->
 
     <section class="about-section">
@@ -338,7 +364,7 @@
         </div>
     </section>
 
-    <!--9 блок -->
+    <!--8 блок -->
     <section class="repair-section">
         <div class="container repair-section__container">
             <p class="repair-section__title">Закажите ремонт c сайта, получите <br>
@@ -355,7 +381,10 @@
 
     </section>
 
-    <!--10 блок -->
+
+
+
+    <!--9 блок -->
     <section class="steps-process-section">
         <div class="container steps-process-section__container">
             <h2 class="steps-title">Как производятся работы</h2>
@@ -417,7 +446,7 @@
         </div>
     </section>
 
-    <!-- 11 блок  -->
+    <!-- 10 блок  -->
     <section class="service-section">
         <div class="container">
             <p class="section-text">
@@ -479,7 +508,8 @@
         </div>
     </section>
 
-    <!--12  Секция FAQ -->
+
+    <!--11  Секция FAQ -->
     <section class="faq-section">
         <div class="container faq-section__container">
             <div class="faq-section__flex">
@@ -562,7 +592,7 @@
                 <p>ИП Бирюков С.В.</p>
                 <p>ИНН 503500327557</p>
             </div>
-            <div >
+            <div>
                 <ul class="footer__list col-4" style="list-style: none;">
                     <li>О компании</li>
                     <li>Контакты</li>
