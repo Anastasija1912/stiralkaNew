@@ -1224,7 +1224,7 @@ body {
 
     /* 6 WORK */
     .works_block {
-        padding-bottom: 20px;
+       
     }
 .work-item {
     display:inline;
@@ -1248,11 +1248,52 @@ body {
     margin: 0;
     align-self: flex-end;
 }
+.work-item_block {
+    height: 60px; /* Высота блока 60px */
+    overflow: hidden; /* Обрезаем все, что выходит за границы */
+    position: relative;
+    display: flex;
+    align-items: flex-end; /* Прижимаем контент к низу */
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.work-item_block img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0; /* Прижимаем картинку к низу блока */
+    left: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+   
+    left: 0;
+    transform: translateY(calc(100% - 60px)); /* Сдвигаем вниз на (высота картинки - 60px) */
+}
+
+.work-item_block__text {
+    position: relative;
+    z-index: 2; /* Текст поверх картинки */
+    margin: 0;
+    font-size:14px;
+    font-weight: 400;
+bottom:10px;
+left:20px;
+   
+}
+
+
+
     /* 7 ABOUT */
     .about-section {
-        padding: 0px;
-        width: 90%;
-        margin: auto;
+        padding: 0;
+        margin:0;
+        /* width: 90%; */
+         margin: auto; 
     }
 
     .about {
@@ -1261,15 +1302,16 @@ body {
 
     .about-main {
         /* height:100%; */
-        padding-top: 20px;
+        padding-top: 10px;
     }
 
     .about-title {
         font-size: 40px;
-        font-weight: 400;
-        padding-top: 20px;
+      text-align:center;
+        padding-top: 10px;
         margin: 0;
-        line-height: 1.2;
+        padding-left: 0;
+        line-height: 1;
     }
 
     .about-content {
@@ -1283,36 +1325,51 @@ body {
     .features-flex {
         align-content: center;
         align-items: center;
-        padding: 5px;
-        width: 90%;
+        /* padding: 5px; */
+        /* width: 90%; */
         height: 100%;
     }
 
     .feature-title {
         margin: auto;
-        padding-top: 20px
+        padding-top: 10px
     }
 
     .feature-content {
-
+width:100%;
         padding-left: 1px;
     }
 
     .feature-description {
         font-weight: 300;
+        text-align:left;
+        margin:0;
+        margin-left:20px;
+        margin-top:10px;
+      
     }
-
+.feature-icon {
+    height:50px;
+}
+    .about-section__container {
+        width: 90%;
+        /* padding-left: 10px;
+        padding-right: 10px; */
+    }
+    .about-content {
+        /* padding-bottom: 10px; */
+    }
     .about-main {
-        padding-left: 20px !important;
-        padding-right: 20px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .features-flex {
-        padding: 0 15px;
+        /* padding: 0 15px; */
     }
 
     .feature-card {
-        margin-bottom: 2px;
+        /* margin-bottom: 2px; */
     }
 
     /* 8 блок */
