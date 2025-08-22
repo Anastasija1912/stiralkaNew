@@ -1203,7 +1203,7 @@ body {
         padding: 0;
         margin: 0;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 10px;
         padding-bottom: 10px;
         font-size: 28px;
     }
@@ -1219,17 +1219,35 @@ body {
         width: 100% !important;
         max-width: 300px;
         margin-bottom: 15px;
+        height: 130px;
     }
 
     /* 6 WORK */
     .works_block {
         padding-bottom: 20px;
     }
-
+.work-item {
+    display:inline;
+}
     .about-content {
         flex-direction: column !important;
     }
-
+.work-item__text{
+    padding:10px;
+}
+ .work-item__many {
+    padding-top:0px;
+    padding-left: 10px;
+}
+.work-item img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 30%;
+    height: auto;
+    margin: 0;
+    align-self: flex-end;
+}
     /* 7 ABOUT */
     .about-section {
         padding: 0px;
