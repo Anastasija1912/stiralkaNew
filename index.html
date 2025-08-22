@@ -385,16 +385,20 @@
 
 
     <!--9 блок -->
-    <section class="steps-process-section">
-        <div class="container steps-process-section__container">
-            <h2 class="steps-title">Как производятся работы</h2>
+    <div class="steps-slider-container">
+        <div class="steps-slider-arrow steps-slider-arrow-left">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="#60a81d">
+                <path d="M15.5 19l-7-7 7-7"></path>
+            </svg>
+        </div>
+        
+        <div class="steps-slider">
             <div class="steps-container">
                 <div class="steps-row">
                     <!-- Step 1 -->
                     <div class="step-col">
                         <div class="step-content">
-                            <div class="step-icon" style="background-image: url('Call.png')">
-                            </div>
+                            <div class="step-icon" style="background-image: url('Call.png')"></div>
                             <div class="step-title">Вы сделали заказ</div>
                             <div class="step-description">Вы оставляете заявку на выезд мастера
                                 в удобное для вас время. Заявку можно
@@ -411,9 +415,7 @@
                     <!-- Step 2 -->
                     <div class="step-col">
                         <div class="step-content">
-
-                            <div class="step-icon" style="background-image: url('enterprise.png')">
-                            </div>
+                            <div class="step-icon" style="background-image: url('enterprise.png')"></div>
                             <div class="step-title">Проводим бесплатную диагностику</div>
                             <div class="step-description">Приехавший к вам мастер проводит первичную
                                 диагностику для определения неисправности и стоимости работ.
@@ -429,22 +431,87 @@
                     <!-- Step 3 -->
                     <div class="step-col">
                         <div class="step-content">
-
-                            <div class="step-icon" style="background-image: url('spanner.png')">
-                            </div>
+                            <div class="step-icon" style="background-image: url('spanner.png')"></div>
                             <div class="step-title">Оперативно приступаем к ремонту</div>
                             <div class="step-description">По окончании выполнения всех работ вам выдадут
-                                договор и бланк сторогой отчетности БСО-1.
+                                договор и бланк сторогой отчетности BCO-1.
                                 На основании этих документов вы можете обратиться
                                 к нам, в случае возникновения гарантийного случая.</div>
-
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-    </section>
+        
+        <div class="steps-slider-arrow steps-slider-arrow-right">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="#60a81d">
+                <path d="M8.5 5l7 7-7 7"></path>
+            </svg>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            function isMobile() {
+                return window.matchMedia('(max-width: 768px)').matches;
+            }
+            
+            const slider = document.querySelector('.steps-container');
+            const arrows = document.querySelectorAll('.steps-slider-arrow');
+            const steps = document.querySelectorAll('.step-col');
+            let currentPosition = 0;
+            let stepWidth = 0;
+            
+            function initSlider() {
+                if (isMobile()) {
+                    // Рассчитываем ширину шага с учетом gap
+                    const sliderWidth = document.querySelector('.steps-slider').offsetWidth;
+                    stepWidth = sliderWidth;
+                    
+                    arrows.forEach(arrow => {
+                        arrow.style.display = 'flex';
+                        arrow.addEventListener('click', function() {
+                            if (this.classList.contains('steps-slider-arrow-right')) {
+                                // Вперед
+                                currentPosition = Math.max(currentPosition - stepWidth, -stepWidth * (steps.length - 1));
+                            } else {
+                                // Назад
+                                currentPosition = Math.min(currentPosition + stepWidth, 0);
+                            }
+                            
+                            slider.style.transform = `translateX(${currentPosition}px)`;
+                            console.log('Current position:', currentPosition); // Для отладки
+                        });
+                    });
+                    
+                    // Сбрасываем позицию при инициализации
+                    slider.style.transform = 'translateX(0px)';
+                    currentPosition = 0;
+                    
+                } else {
+                    arrows.forEach(arrow => arrow.style.display = 'none');
+                    slider.style.transform = 'translateX(0)';
+                    currentPosition = 0;
+                }
+            }
+            
+            // Инициализация
+            initSlider();
+            
+            // Обновляем при изменении размера
+            window.addEventListener('resize', function() {
+                if (isMobile()) {
+                    const sliderWidth = document.querySelector('.steps-slider').offsetWidth;
+                    stepWidth = sliderWidth;
+                    // Корректируем текущую позицию под новый размер
+                    currentPosition = -stepWidth * Math.abs(currentPosition / stepWidth);
+                    slider.style.transform = `translateX(${currentPosition}px)`;
+                } else {
+                    initSlider();
+                }
+            });
+        });
+        </script>
+
 
     <!-- 10 блок  -->
     <section class="service-section">
@@ -481,9 +548,9 @@
                 предлагает различные услуги и характерные особенности
                 клиентского сервиса. Пользователям сложно сделать выбор того или иного исполнителя.
             </p>
-            <p class="section-text_bold"><b>Мы в свою очередь предлагаем нашим клиентам следующие плюсы при обращении в
+            <p class="section-text"><b>Мы в свою очередь предлагаем нашим клиентам следующие плюсы при обращении в
                     нашу компанию:</b></p>
-            <ul class="service__list">
+            <ul class=" section-text service__list">
                 <li>Наша техподдержка работает круглосуточно. Вы можете задать вопрос консультанту и оставить заявку на
                     выезд инженера на дом.</li>
                 <li>На ремонт и установку новых комплектующих, предлагается долгосрочная гарантия до 36 месяцев, которой
@@ -500,7 +567,7 @@
                 <li>О качестве ремонта свидетельствуют многочисленные отзывы наших клиентов. Познакомиться с ними можно
                     в разделе "Отзывы".</li>
             </ul>
-            <p class="section-text">
+            <p class="section-text section-text__last">
                 Обращение в сервисный центр для ремонта посудомойки, стиральной машины или сушильного агрегата, станет
                 лучшим решением проблемы с неработоспособностью техники.
             </p>
