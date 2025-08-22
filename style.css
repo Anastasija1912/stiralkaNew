@@ -1205,6 +1205,9 @@ body {
     }
 
     /* 4 BRANDS */
+    .brands-section__container {
+        width: 90%;
+    }
     .brand {
         height: 100%;
         padding-top: 20px;
@@ -1218,9 +1221,10 @@ body {
     }
 
     .brands-section {
+        background-color: #fff;
         margin: auto;
         gap: 0;
-        width: 90%;
+       
         padding-top: 5px;
     }
 
@@ -1484,8 +1488,9 @@ body {
     }
 
     .step-content {
+        background-color: #fff;
         height: 250px;
-        background: #fff;
+        /* background: #f9f9f9; */
         padding: 20px;
     }
 
@@ -1725,6 +1730,7 @@ body {
     /* 4 BRANDS */
 
     .brands-section {
+        background-color: #fff;
         height: auto !important;
         padding: 15px 0;
     }
