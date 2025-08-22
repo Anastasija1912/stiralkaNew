@@ -1079,7 +1079,8 @@ body {
         height: auto !important;
         padding: 20px !important;
     }
-
+    .hero__img  {display:none;
+    }
     .hero__title {
         font-size: 20px !important;
         width: 100% !important;
