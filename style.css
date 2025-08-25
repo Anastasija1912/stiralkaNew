@@ -16,13 +16,7 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    /* padding: 0 15px; */
-}
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    /* padding: 0 20px; */
 }
 
 /* header */
@@ -362,7 +356,7 @@ body {
 
 /* Блок brands */
 .brands-section {
-   padding: 10px 0;
+    padding: 10px 0;
     /* height: 85px; */
     background-color: #fff;
     display: flex;
@@ -511,7 +505,7 @@ body {
     font-size: 48px;
     font-weight: 400;
 
-    padding-top: 70px;
+    padding-top: 60px;
     padding-left: 100px;
     margin: 0;
     color: #292929;
@@ -531,7 +525,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    flex: 5; 
+    flex: 5;
 }
 
 .about-description {
@@ -566,6 +560,7 @@ body {
     line-height: 1.2;
     color: #292929;
 }
+
 /* 
 .feature-text {
     font-size: 1rem;
@@ -690,7 +685,7 @@ body {
     padding: 2px 15px;
     /* border-radius: 10px; */
     /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); */
-     height: 100%; 
+    height: 100%;
     text-align: center;
     transition: all 0.3s ease;
     position: relative;
@@ -716,11 +711,11 @@ body {
     justify-content: center;
     font-weight: bold;
     font-size: 16px;
- 
+
 }
 
 .step-icon {
-    padding-top:20px;
+    padding-top: 20px;
     width: 60px;
     height: 60px;
     margin: 0 auto 15px;
@@ -800,7 +795,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
-    padding: 5px 0;
+    padding: 0px 0;
 }
 
 .section-text_bold {
@@ -813,8 +808,8 @@ body {
 }
 
 .service-section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 45px;
+    padding-bottom: 44px;
     background-color: white;
     margin: auto;
 }
@@ -867,8 +862,8 @@ body {
     align-content: center;
     flex-wrap: nowrap;
     flex-direction: row;
-    padding-top: 70px;
-    padding-left: 70px;
+    padding-top: 60px;
+    padding-left: 60px;
     align-items: flex-start;
 }
 
@@ -963,7 +958,7 @@ body {
     color: #fff;
     font-size: 16px;
     font-weight: 300;
-    
+
 }
 
 .col-3 {
@@ -1063,16 +1058,11 @@ body {
 @media (max-width: 480px) {
     /* Мобильные телефоны */
 
-    .container {}
-
     /* header */
     .header {
-
         height: 100%;
         margin: 0;
-
         padding-bottom: 0px;
-
     }
 
     .working-hours,
@@ -1205,6 +1195,7 @@ body {
     .brands-section__container {
         width: 90%;
     }
+
     .brand {
         height: 100%;
         padding-top: 20px;
@@ -1221,7 +1212,7 @@ body {
         background-color: #fff;
         margin: auto;
         gap: 0;
-       
+
         padding-top: 5px;
     }
 
@@ -1332,10 +1323,7 @@ body {
         font-weight: 400;
         bottom: 10px;
         left: 20px;
-
     }
-
-
 
     /* 7 ABOUT */
     .about-section {
@@ -1352,7 +1340,6 @@ body {
     .about-main {
         /* height:100%; */
         padding-top: 10px;
-     
     }
 
     .about-title {
@@ -1379,7 +1366,6 @@ body {
         /* margin-bottom: 10px; */
         /* width: 90%; */
         height: 100%;
-
     }
 
     .feature-title {
@@ -1398,7 +1384,6 @@ body {
         margin: 0;
         margin-left: 20px;
         margin-top: 10px;
-
     }
 
     .feature-icon {
@@ -1430,11 +1415,8 @@ body {
 
     /* 8 блок */
 
-
     .repair-section {
-
         height: 100%;
-
     }
 
     .repair-section__title {
@@ -1448,13 +1430,15 @@ body {
 
     /* 9 блок */
     .step-arrow {
-        display:none;
+        display: none;
     }
+
     .steps-slider-container {
         padding: 0 50px;
         display: flex;
         align-items: center;
-        min-height: 320px; /* Добавлено для мобильных */
+        min-height: 320px;
+        /* Добавлено для мобильных */
     }
 
     .steps-slider {
@@ -1473,13 +1457,15 @@ body {
         display: flex;
         min-width: 100%;
         gap: 15px;
-        flex-direction: row !important; /* Важно для слайдера */
+        flex-direction: row !important;
+        /* Важно для слайдера */
         padding-top: 0;
         padding-bottom: 0;
     }
 
     .step-col {
-        flex: 0 0 90% !important; /* Принудительно 100% ширины */
+        flex: 0 0 90% !important;
+        /* Принудительно 100% ширины */
         margin-bottom: 0;
         padding: 0 10px;
         height: 100%;
@@ -1537,20 +1523,21 @@ body {
         fill: none;
         transition: stroke 0.3s ease;
     }
+
     .steps-slider-container {
         padding: 0 40px;
     }
-    
+
     .steps-slider-arrow {
         width: 30px;
         height: 30px;
     }
-    
+
     .steps-slider-arrow svg {
         width: 16px;
         height: 16px;
     }
-    
+
     .step-content {
         height: 240px;
         padding: 15px;
@@ -1563,19 +1550,22 @@ body {
         padding-top: 10px;
         width: 90%;
     }
-.section-text {
-    padding:0 10px;
-    margin:10px;
-}
 
-.service-title {
-    margin:10px;
-    padding:0 10px;
-   line-break: 1 ;
-}
-.section-text__last {
-    padding-bottom:10px;
-}
+    .section-text {
+        padding: 0 10px;
+        margin: 10px;
+    }
+
+    .service-title {
+        margin: 10px;
+        padding: 0 10px;
+        line-break: 1;
+    }
+
+    .section-text__last {
+        padding-bottom: 10px;
+    }
+
     /* 11 блок */
     .fax-section-title {
         font-size: 26px;
@@ -1653,7 +1643,6 @@ body {
         justify-content: center;
         align-content: center;
         flex-direction: row;
-
         font-size: 12px;
     }
 }
@@ -1663,6 +1652,7 @@ body {
 
     /* header */
     .header {
+
         height: 60px !important;
         padding: 10px 0 !important;
     }
@@ -1872,8 +1862,17 @@ body {
     /* Планшеты */
 
     /* header */
+    .header {
+        padding: 15px;
+    }
+
     .header__info {
+        justify-content: space-evenly;
         width: 600px !important;
+    }
+
+    .working-hours {
+        display: none;
     }
 
     .header__actions {
@@ -1881,10 +1880,15 @@ body {
     }
 
     /* МЕНЮ */
+    .menu__list {padding-left:50px;
+        padding-right:50px;
+    }
     .menu__list li {
         width: 220px !important;
         font-size: 11px !important;
     }
+    .menu__list__button {margin:5px ;
+    margin-}
 
     .menu__list img {
         width: 24px !important;
@@ -1919,19 +1923,22 @@ body {
     }
 
     .hero__description {
-        width: 90% !important;
+        margin:auto;
+     text-align: center;
         font-size: 18px;
     }
 
     .phone-input {
         justify-content: center !important;
     }
-
+.callback-form {padding:0;
+}
+.list{display:none;}
     /* 4 BRANDS */
     .brands-section {
-        padding: 60px 0;
+        padding: 10px 0;
     }
-
+.brand-item img {height:25px;}
     /* 5 WORK */
     .work-section__container {
         width: 90%;
@@ -1942,7 +1949,7 @@ body {
         margin: 0;
         text-align: center;
         padding-top: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         font-size: 34px;
     }
 
@@ -1972,17 +1979,27 @@ body {
         align-items: center;
     }
 
+.about-title  {
+    padding:0;
+    margin:0 auto;
+    margin-top:20px;
+    text-align:center;
+}
     .about-main {
-        padding-left: 50px !important;
+       
+        margin:auto;
+    
+         padding-left: 50px !important;
         padding-right: 50px;
-        text-align: center;
+        padding-top:20px;
+        text-align: left;
     }
 
     .about-section {
-        margin: 0;
+        margin: 0px;
         padding-left: 0;
         padding-top: 0;
-        width: 90%;
+        /* width: 90%; */
     }
 
     .about-description {
