@@ -8,7 +8,7 @@ body {
     margin: 0;
     margin: auto;
     padding: 0;
-    color: #333;
+    color: #292929;
     line-height: 1.3;
     background-color: #f9f9f9;
 }
@@ -339,7 +339,7 @@ body {
     background-color: #fff;
 }
 
-.hero__policy {
+/* .hero__policy {
     vertical-align: middle;
     color: #000000;
     font-size: 11px;
@@ -349,7 +349,7 @@ body {
     background-position: center center;
     border-color: transparent;
     border-style: solid;
-}
+} */
 
 .hero__pol {
     color: #ff8562;
@@ -362,8 +362,9 @@ body {
 
 /* Блок brands */
 .brands-section {
-    /* padding: 60px 0; */
+   padding: 10px 0;
     /* height: 85px; */
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -518,7 +519,7 @@ body {
 
 .about-content {
     display: flex;
-    padding-bottom: 60px;
+    padding-bottom: 10px;
     align-items: start;
 }
 
@@ -530,6 +531,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    flex: 5; 
 }
 
 .about-description {
@@ -542,7 +544,6 @@ body {
 .about-features {
     display: flex;
     flex-direction: column;
-
     gap: 30px;
 }
 
@@ -564,15 +565,14 @@ body {
     font-weight: 500;
     line-height: 1.2;
     color: #292929;
-
 }
-
+/* 
 .feature-text {
     font-size: 1rem;
     line-height: 1.5;
     color: #666;
     margin: 0;
-}
+} */
 
 /* Блок features */
 .features-section {
@@ -582,14 +582,14 @@ body {
 }
 
 .feature-description {
-
     font-size: 14px;
     line-height: 1.2;
     font-weight: 300;
+    text-align: left;
 }
 
 .features-flex {
-
+    flex: 6;
     /* в адаптиве все ломает max-width: 500px;
     max-height: 475px; */
     display: flex;
@@ -656,7 +656,6 @@ body {
 }
 
 .steps-process-section__container {
-
     background-color: #fff;
 }
 
@@ -681,7 +680,6 @@ body {
 .step-col {
     /* width: 16.66%; */
     padding: 0 10px;
-
     position: relative;
     max-width: 360px;
     /* max-height: 150px; */
@@ -698,10 +696,10 @@ body {
     position: relative;
 }
 
-.step-content:hover {
+/* .step-content:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
+} */
 
 .step-number {
     position: absolute;
@@ -718,9 +716,11 @@ body {
     justify-content: center;
     font-weight: bold;
     font-size: 16px;
+ 
 }
 
 .step-icon {
+    padding-top:20px;
     width: 60px;
     height: 60px;
     margin: 0 auto 15px;
@@ -732,7 +732,7 @@ body {
 .step-title {
     font-size: 18px;
     font-weight: 600;
-    color: #333;
+    color: #292929;
     margin-bottom: 10px;
     min-height: 45px;
     display: flex;
@@ -742,7 +742,7 @@ body {
 
 .step-description {
     font-size: 14px;
-    color: #666;
+    color: #292929;
     line-height: 1.4;
     margin-bottom: 15px;
 }
@@ -797,7 +797,6 @@ body {
 
 /* 11 блок */
 .section-text {
-
     font-size: 16px;
     font-weight: 400;
     line-height: 1.2;
@@ -815,7 +814,6 @@ body {
 
 .service-section {
     padding-top: 60px;
-    background-color: #eefdfd;
     padding-bottom: 60px;
     background-color: white;
     margin: auto;
@@ -861,7 +859,6 @@ body {
 
 .faq-section__container {
     background-color: #94a486;
-
 }
 
 .faq-section__flex {
@@ -925,7 +922,7 @@ body {
 .footer {
     font-size: 14px;
     line-height: 1.6;
-    background-color: #333;
+    background-color: #382828;
     color: white;
 }
 
@@ -966,7 +963,7 @@ body {
     color: #fff;
     font-size: 16px;
     font-weight: 300;
-    line-height: ;
+    
 }
 
 .col-3 {
@@ -1017,11 +1014,11 @@ body {
     font-weight: 200;
 }
 
-.footer h3 {
+/* .footer h3 {
     font-size: 18px;
     margin-bottom: 15px;
     color: #000;
-}
+} */
 
 .footer a {
     color: #ff8562;
@@ -1355,6 +1352,7 @@ body {
     .about-main {
         /* height:100%; */
         padding-top: 10px;
+     
     }
 
     .about-title {
